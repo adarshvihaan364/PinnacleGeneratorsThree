@@ -39,14 +39,17 @@ import { MagneticButton } from "@/components/site/MagneticButton";
 
 export const Route = createFileRoute("/")({
   component: Home,
-  head: () => ({
+ head: () => ({
     meta: [
-      { title: "Pinnacle Generators - Immersive Power Solutions" },
+      { title: "Pinnacle Generators Three" },
       {
         name: "description",
         content:
           "Experience the next generation of power backup. Pinnacle Generators: Engineering reliability from 5 KVA to 2500 KVA with immersive technology.",
       },
+    ],
+    links: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
   }),
 });
@@ -71,34 +74,34 @@ const products = [
   {
     title: "Silent Generators",
     range: "5 KVA - 500 KVA",
-    desc: "Ultra-quiet power solutions for residential and commercial spaces",
+    desc: "Silent generators offer a multitude of benefits, including reduced noise levels, fuel efficiency, and environmental friendliness.",
     image: "https://pinnaclegenerators.com/wp-content/uploads/2025/02/1.png",
     icon: Volume2,
-    points: ["Low noise operation", "Fuel efficient", "Compact design"],
+    points: ["Reduced Noise Pollution", "Enhanced Fuel Efficiency", "Longer Lifespan & Durability"],
   },
   {
     title: "Mobile Generators",
     range: "10 KVA - 250 KVA",
-    desc: "Portable power solutions for construction and field operations",
-    image: "https://images.unsplash.com/photo-1700318092011-6e4666e94ab5?auto=format&fit=crop&w=1200&q=70",
+    desc: "Our Mobile generators, which are useful for work sites, farmer’s markets, emergencies, are extremely budget and eco-friendly products.",
+    image: "https://pinnaclegenerators.com/wp-content/uploads/2022/10/Mobile-Generators.jpeg",
     icon: Truck,
-    points: ["Easy transportation", "Rugged build", "Quick deployment"],
+    points: ["Trailer-Mounted Mobility", "Easy Transport & Quick Deployment", "Enclosed Silent Canopy Design"],
   },
   {
     title: "Lighting Towers",
     range: "5 KVA - 20 KVA",
-    desc: "High-intensity illumination for construction sites and events",
-    image: "https://images.unsplash.com/photo-1700318131252-ab19c871ab60?auto=format&fit=crop&w=1200&q=70",
+    desc: "Trailer-mounted lighting towers designed to provide powerful illumination for on-site and remote operations.",
+    image: "https://pinnaclegenerators.com/wp-content/uploads/2022/09/Lighting-Towers.jpg",
     icon: Lightbulb,
-    points: ["360 degree coverage", "Weather resistant", "Fuel efficient"],
+    points: ["Trailer-Mounted Mobility", "Telescopic Mast Coverage", "High-Intensity Lighting"],
   },
   {
     title: "Welding Generators",
     range: "250A - 600A",
-    desc: "Heavy-duty welding power with stable output",
-    image: "https://images.unsplash.com/photo-1658260867231-535a1f7c98b9?auto=format&fit=crop&w=1200&q=70",
+    desc: "Open-frame welding generator unit designed with an integrated engine and control panel, suitable for on-site operations.",
+    image: "https://pinnaclegenerators.com/wp-content/uploads/2022/08/Welding-Generators-2.jpg",
     icon: Wrench,
-    points: ["Stable arc", "Dual purpose", "Industrial grade"],
+    points: ["Open Frame Structure", "Engine-Driven Unit", "Integrated Control Panel"],
   },
 ];
 
@@ -145,25 +148,52 @@ const projects = [
 ];
 
 const partners = [
-  "Raymond", "SBI", "Bharat Petroleum", "BSNL", "HP Petroleum", "Indian Oil",
-  "More Retail", "Fortune", "VLCC", "HDFC", "OYO", "TSTRANSCO",
+  { name: 'Raymond', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Raymond-1.png' },
+  { name: 'SBI', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/SBI-1.png' },
+  { name: 'Bharat Petroleum', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Bharat-Petroleum.png' },
+  { name: 'BSNL', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/BSNL.png' },
+  { name: 'HP Petroleum', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/HP-Petroleum.png' },
+  { name: 'Indian Oil', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Indian-Oil.png' },
+  { name: 'More', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/More.png' },
+  { name: 'Mother Diary', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Mother-Diary.png' },
+  { name: 'Fortune', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Fortune.png' },
+  { name: 'VLCC', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/VLCC.png' },
+  { name: 'apropa', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/apropa.png' },
+  { name: 'Kolors', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Kolors.png' },
+  { name: 'tstranco', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/tstranco.png' },
+  { name: 'apt', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/apt.png' },
+  { name: 'HDFC', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/HDFC.png' },
+  { name: 'India Post', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/India-Post.png' },
+  { name: 'OYO', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/OYO.png' },
+  { name: 'AP', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/AP.png' },
+  { name: 'CCD', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/CCD.png' },
+  { name: 'Isthara', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Isthara.png' },
 ];
 
 const testimonials = [
   {
+    quote: "Pinnacle's power solutions have been instrumental in keeping our network infrastructure resilient. Their commitment to reliability mirrors our own.",
+    name: "Reliance Jio",
+    role: "Strategic Partner",
+    rating: 5.0,
+  },
+  {
+    quote: "Excellent quality generators! We use them for our hospital and they have never let us down. The 24/7 support is a lifesaver.",
+    name: "Metro General Hospital",
+    role: "Healthcare Partner",
+    rating: 4.8,
+  },
+  {
+    quote: "Best generator manufacturer in Hyderabad. Their silent generators are perfect for our office setup. Highly recommended!",
+    name: "Reddy Enterprises",
+    role: "Industrial Partner",
+    rating: 4.9,
+  },
+  {
     quote: "Pinnacle Generators has been our trusted partner for over 5 years. Their generators are reliable and their service support is excellent.",
-    name: "Rajesh Kumar",
-    role: "ABC Construction Ltd.",
-  },
-  {
-    quote: "We rely on Pinnacle's silent generators for our critical medical equipment. Fast-growing company with quality products and the best service support.",
-    name: "Priya Sharma",
-    role: "Metro Hospital",
-  },
-  {
-    quote: "Timely response from this service provider. Their wide range of generators from 5 KVA to 2500 KVA meets all our industrial needs.",
-    name: "Amit Patel",
-    role: "Sunrise Industries",
+    name: "ABC Construction",
+    role: "Construction Partner",
+    rating: 4.6,
   },
 ];
 
@@ -193,77 +223,122 @@ function Home() {
       <FloatingNav />
       <Header />
 
-      <section id="home" className="relative flex min-h-screen flex-col justify-center pt-20">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-glow opacity-50" />
-        <div className="relative mx-auto w-full max-w-[1600px] px-6 py-12">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <Reveal>
-              <div className="inline-flex items-center gap-3 rounded-full border border-brand/30 bg-brand/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.3em] text-brand shadow-glow backdrop-blur-md">
-                <span className="h-2 w-2 rounded-full bg-brand animate-pulse" />
-                Engineering the Future of Power
-              </div>
-            </Reveal>
-
-            <div className="mt-10 max-w-6xl">
-              <Reveal delay={100}>
-                <h1 className="font-display text-5xl font-bold leading-[0.9] tracking-tighter sm:text-6xl lg:text-[80px] xl:text-[100px]">
-                  UNLEASHING
-                  <span className="block text-stroke opacity-60">RAW ENERGY</span>
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">AT SCALE.</span>
-                </h1>
+      <section id="home" className="relative flex min-h-screen flex-col items-center justify-center pt-24 overflow-hidden">
+        {/* Immersive Background elements */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(var(--brand-rgb),0.15),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(var(--brand-rgb),0.1),transparent_50%)]" />
+        <div className="absolute top-0 left-0 h-full w-full opacity-20 grain pointer-events-none" />
+        
+        <div className="relative mx-auto w-full max-w-[1600px] px-6 py-12 lg:py-20">
+          <div className="grid gap-16 lg:grid-cols-[1fr_0.8fr] lg:items-center">
+            
+            {/* Left Column: Typography & Action */}
+            <div className="flex flex-col z-10">
+              <Reveal>
+                <div className="inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-2 text-[10px] font-bold uppercase tracking-[0.4em] text-brand backdrop-blur-xl shadow-2xl">
+                  <span className="h-2 w-2 rounded-full bg-brand animate-pulse shadow-[0_0_10px_rgba(var(--brand-rgb),0.8)]" />
+                  Pinnacle of Power Engineering
+                </div>
               </Reveal>
-            </div>
 
-            <div className="mt-12 grid w-full gap-10 lg:grid-cols-[1fr_0.4fr]">
-              <Reveal delay={200}>
-                <div className="space-y-8">
-                  <div className="max-w-2xl space-y-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
-                    <p>Pinnacle Generators is a pioneer in manufacturing stand-by gensets, offering a wide range of specifications available in the market.</p>
-                    <p>Pinnacle Generators an Organization based in Hyderabad with standing experience for <strong className="text-foreground">20 years plus</strong> in the Power Generators sector, involved themselves in more than <strong className="text-foreground">25,000 projects</strong> with over <strong className="text-foreground">2 Million</strong> happy customers.</p>
-                    <p>Pinnacle is specialized in the field of manufacturing, installation, commissioning, preventive maintenance, servicing of Diesel Generating Sets.</p>
-                  </div>
-                  
-                  <div className="flex flex-wrap items-center gap-6">
-                    <MagneticButton href="#contact" className="group h-20 w-56 rounded-full bg-gradient-brand text-sm font-bold shadow-glow">
-                      <span className="flex items-center gap-3">
-                        Request Quote
-                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                      </span>
+              <div className="mt-10">
+                <Reveal delay={100}>
+                  <h1 className="font-display text-7xl font-black leading-[0.85] tracking-tighter sm:text-8xl lg:text-9xl xl:text-[140px] text-white">
+                    LIMITLESS
+                    <span className="block bg-gradient-brand bg-clip-text text-transparent opacity-90 drop-shadow-2xl">ENERGY.</span>
+                  </h1>
+                </Reveal>
+              </div>
+
+              <div className="mt-12 max-w-xl">
+                <Reveal delay={200}>
+                  <p className="text-xl leading-relaxed text-white/60 lg:text-2xl font-light">
+                    Industrial grade power generation. Engineering the future of <span className="text-white font-medium">uninterrupted energy infrastructure</span> across India.
+                  </p>
+                </Reveal>
+                
+                <Reveal delay={300}>
+                  <div className="mt-14 flex flex-wrap items-center gap-8">
+                    <MagneticButton href="#contact" className="group relative h-20 px-12 rounded-3xl bg-gradient-brand text-sm font-bold uppercase tracking-widest text-white shadow-[0_20px_50px_rgba(var(--brand-rgb),0.3)] transition-all hover:scale-105">
+                      Request Quote
+                      <ArrowRight className="ml-3 inline-block h-5 w-5 transition-transform group-hover:translate-x-2" />
                     </MagneticButton>
                     
-                    <MagneticButton href="#products" className="group h-20 w-56 rounded-full border border-white/10 bg-white/5 text-sm font-bold backdrop-blur-xl">
-                      <span className="flex items-center gap-3">
-                        View Products
-                        <Zap className="h-5 w-5 transition-transform group-hover:rotate-12" />
-                      </span>
-                    </MagneticButton>
+                    <a href="#products" className="group flex items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-white/50 transition-colors hover:text-white">
+                      <div className="h-12 w-12 rounded-2xl border border-white/10 bg-white/5 flex items-center justify-center transition-all group-hover:border-brand/50 group-hover:bg-brand/10">
+                        <Zap className="h-5 w-5" />
+                      </div>
+                      Explore Range
+                    </a>
+                  </div>
+                </Reveal>
+              </div>
+              
+              {/* Trust indicators */}
+              <div className="mt-20 flex items-center gap-12 border-t border-white/5 pt-12">
+                <Reveal delay={400}>
+                  <div>
+                    <div className="font-display text-4xl font-black text-white italic">20+</div>
+                    <div className="mt-1 text-[9px] font-bold uppercase tracking-widest text-white/40">Years Experience</div>
+                  </div>
+                </Reveal>
+                <Reveal delay={500}>
+                  <div>
+                    <div className="font-display text-4xl font-black text-brand italic">2M+</div>
+                    <div className="mt-1 text-[9px] font-bold uppercase tracking-widest text-white/40">Happy Clients</div>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
+
+            {/* Right Column: Immersive Visuals */}
+            <div className="relative">
+              <Reveal delay={400}>
+                <div className="relative aspect-square lg:h-[750px] w-full">
+                  {/* Decorative Glass rings */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[120%] w-[120%] border border-white/5 rounded-full animate-[spin_30s_linear_infinite] opacity-20 pointer-events-none" />
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[90%] w-[90%] border border-white/10 rounded-full animate-[spin_20s_linear_infinite_reverse] opacity-20 pointer-events-none" />
+                  
+                  {/* Main Product Stage */}
+                  <div className="relative h-full w-full rounded-[64px] border border-white/10 bg-white/5 backdrop-blur-3xl overflow-hidden shadow-2xl group">
+                    <div className="absolute inset-0 bg-gradient-to-br from-brand/20 via-transparent to-black/60 opacity-50" />
+                    
+                    <div className="absolute inset-0 flex items-center justify-center p-12">
+                      <img 
+                        src="https://pinnaclegenerators.com/wp-content/uploads/2025/02/1.png" 
+                        alt="Pinnacle Generator" 
+                        className="relative z-10 w-full h-auto object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.8)] transition-transform duration-1000 group-hover:scale-110"
+                      />
+                    </div>
+
+                    {/* Floating Info Cards */}
+                    <div className="absolute top-12 right-12 p-6 rounded-3xl border border-white/20 bg-black/60 backdrop-blur-2xl float-anim shadow-2xl">
+                      <div className="flex items-center gap-4">
+                        <div className="h-12 w-12 rounded-2xl bg-brand/20 flex items-center justify-center text-brand">
+                          <Shield className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <div className="text-xl font-black text-white tracking-tight">ISO CERTIFIED</div>
+                          <div className="text-[9px] font-bold uppercase tracking-widest text-white/40">Quality Guaranteed</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="absolute bottom-12 left-12 p-8 rounded-[32px] border border-white/20 bg-white/5 backdrop-blur-3xl float-anim shadow-2xl" style={{ animationDelay: '2s' }}>
+                      <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand mb-3">Power Output</div>
+                      <div className="font-display text-4xl font-black text-white italic tracking-tighter">5 - 2500 KVA</div>
+                    </div>
                   </div>
                 </div>
               </Reveal>
-
-              <Reveal delay={300}>
-                <div className="flex flex-col justify-end gap-6 border-l border-white/10 pl-10 lg:pl-12">
-                  {stats.slice(0, 2).map((s) => (
-                    <div key={s.label}>
-                      <div className="font-display text-5xl font-bold text-brand">
-                        {s.display ?? <Counter to={s.value} suffix={s.suffix} />}
-                      </div>
-                      <div className="mt-1 text-xs font-bold uppercase tracking-widest text-muted-foreground">{s.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </Reveal>
             </div>
+            
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-          <Reveal delay={500}>
-            <div className="flex flex-col items-center gap-4">
-              <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-muted-foreground">Scroll to explore</span>
-              <div className="h-12 w-px bg-gradient-to-b from-brand to-transparent" />
-            </div>
-          </Reveal>
+        {/* Bottom scroll hint */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
+          <div className="h-16 w-[1px] bg-gradient-to-b from-white to-transparent" />
+          <span className="text-[9px] font-bold uppercase tracking-[0.4em] text-white">Explore</span>
         </div>
       </section>
 
@@ -275,10 +350,10 @@ function Home() {
               <div className="section-frame rounded-[32px] p-6">
                 <SectionLabel index="01" label="About Us" />
                 <h2 className="mt-5 font-display text-4xl font-bold leading-[1.02] sm:text-5xl lg:text-6xl">
-                  A manufacturer with the range and discipline to serve critical power needs.
+                  Empowering India with Uninterrupted Energy.
                 </h2>
                 <p className="mt-6 text-base leading-8 text-muted-foreground">
-                  Pinnacle Generators operates at the intersection of industrial performance, responsive service and long-term dependability.
+                  Pinnacle Generators is a Hyderabad-based powerhouse specializing in manufacturing, installation, commissioning, and preventive maintenance of <strong className="text-foreground">Diesel Generating Sets</strong>.
                 </p>
                 <div className="mt-8 grid gap-3">
                   {[
@@ -302,7 +377,7 @@ function Home() {
                 <div className="section-frame rounded-[32px] p-0">
                   <div className="relative overflow-hidden rounded-[32px]">
                     <img
-                      src="https://images.unsplash.com/photo-1636867900334-025210ac78a0?auto=format&fit=crop&w=1200&q=80"
+                      src="https://pinnaclegenerators.com/wp-content/uploads/2025/02/Untitled-design-24.png"
                       alt="Pinnacle Generators Facility"
                       className="aspect-[4/5] w-full object-cover transition-transform duration-[1500ms] hover:scale-105"
                     />
@@ -464,19 +539,24 @@ function Home() {
           <div className="mt-20 grid gap-8 lg:grid-cols-2">
             {projects.map((project, index) => (
               <Reveal key={project.title} delay={index * 100}>
-                <div className="group relative aspect-video overflow-hidden rounded-[40px] shadow-ink">
-                  <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform duration-[2000ms] group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
-                  <div className="absolute inset-0 flex flex-col justify-end p-10">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <div className="text-xs font-bold uppercase tracking-[0.3em] text-brand">Featured Project</div>
-                        <h3 className="mt-3 font-display text-3xl font-bold lg:text-4xl">{project.title}</h3>
-                        <p className="mt-4 max-w-md text-sm text-white/60">{project.desc}</p>
+                <div className="group relative rounded-[40px] border border-white/5 bg-white/5 p-10 transition-all hover:bg-white/10 hover:border-brand/30">
+                  <div className="flex items-start justify-between">
+                    <div className="space-y-4">
+                      <div className="text-xs font-bold uppercase tracking-[0.3em] text-brand">Featured Project</div>
+                      <h3 className="font-display text-3xl font-bold lg:text-4xl">{project.title}</h3>
+                      <p className="max-w-md text-sm text-white/60 leading-relaxed">{project.desc}</p>
+                      
+                      <div className="mt-6 flex flex-wrap gap-4">
+                        <div className="rounded-xl bg-white/5 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-white/40">
+                          {project.location}
+                        </div>
+                        <div className="rounded-xl bg-white/5 px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-white/40">
+                          {project.client}
+                        </div>
                       </div>
-                      <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all group-hover:bg-brand group-hover:border-brand">
-                        <ArrowUpRight className="h-6 w-6" />
-                      </div>
+                    </div>
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all group-hover:bg-brand group-hover:border-brand group-hover:scale-110">
+                      <ArrowUpRight className="h-6 w-6" />
                     </div>
                   </div>
                 </div>
@@ -493,8 +573,8 @@ function Home() {
             </Reveal>
             <Marquee speed="slow">
               {partners.map((partner) => (
-                <div key={partner} className="flex h-20 w-48 shrink-0 items-center justify-center rounded-[24px] border border-white/5 bg-white/5 px-6 font-display text-base font-bold text-muted-foreground transition-all duration-300 hover:border-brand hover:text-brand">
-                  {partner}
+                <div key={partner.name} className="flex h-24 w-48 shrink-0 items-center justify-center rounded-[24px] border border-white/5 bg-white/5 p-4 transition-all duration-300 hover:border-brand hover:bg-white/10 group">
+                  <img src={partner.img} alt={partner.name} className="max-h-full max-w-full object-contain filter grayscale opacity-60 transition-all duration-300 group-hover:filter-none group-hover:opacity-100" />
                 </div>
               ))}
             </Marquee>
@@ -532,11 +612,20 @@ function Home() {
                   <div className="group relative rounded-[40px] border border-white/5 bg-white/5 p-10 transition-colors hover:border-brand/30">
                     <Quote className="absolute right-10 top-10 h-12 w-12 text-brand opacity-10" />
                     <p className="text-xl leading-relaxed italic text-white/90">"{t.quote}"</p>
-                    <div className="mt-10 flex items-center gap-5">
-                      <Initials name={t.name} />
-                      <div>
-                        <div className="font-bold text-lg text-white">{t.name}</div>
-                        <div className="text-sm text-brand font-bold uppercase tracking-widest">{t.role}</div>
+                    <div className="mt-10 flex items-center justify-between gap-5">
+                      <div className="flex items-center gap-5">
+                        <div>
+                          <div className="font-bold text-lg text-white">{t.name}</div>
+                          <div className="text-sm text-brand font-bold uppercase tracking-widest">{t.role}</div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-end gap-1">
+                        <div className="flex gap-1">
+                          {[1, 2, 3, 4, 5].map((star) => (
+                            <Star key={star} className={`h-4 w-4 ${star <= Math.floor(t.rating) ? "fill-brand text-brand" : "text-white/20"}`} />
+                          ))}
+                        </div>
+                        <div className="text-xs font-bold text-white/40">{t.rating} / 5</div>
                       </div>
                     </div>
                   </div>

@@ -12,13 +12,11 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-brand shadow-glow transition-transform duration-500 hover:rotate-12">
-                <Zap className="h-5 w-5" strokeWidth={2.5} />
-              </span>
-              <div>
-                <div className="font-display text-xl font-bold">PINNACLE</div>
-                <div className="text-[10px] tracking-[0.25em] opacity-60">GENERATORS</div>
-              </div>
+              <img
+                src="https://pinnaclegenerators.com/wp-content/uploads/2022/08/Logo-6.png"
+                alt="Pinnacle Generators"
+                className="h-10 w-auto object-contain"
+              />
             </div>
             <p className="mt-5 max-w-sm text-sm opacity-70">
               Powering India since 2005 with reliable generator solutions from 5 KVA to 2500 KVA, trusted by 2M+ customers nationwide.
