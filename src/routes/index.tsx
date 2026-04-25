@@ -170,6 +170,22 @@ const partners = [
   { name: 'Isthara', img: 'https://pinnaclegenerators.com/wp-content/uploads/2022/09/Isthara.png' },
 ];
 
+const kvaRatings = [
+  { label: "5 KVA", link: "https://pinnaclegenerators.com/product/5-kva/" },
+  { label: "7.5 KVA", link: "https://pinnaclegenerators.com/product/7-5-kva/" },
+  { label: "10 KVA", link: "https://pinnaclegenerators.com/product/10-kva/" },
+  { label: "15 KVA", link: "https://pinnaclegenerators.com/product/15-kva/" },
+  { label: "20 KVA", link: "https://pinnaclegenerators.com/product/20-kva/" },
+  { label: "25 KVA", link: "https://pinnaclegenerators.com/product/25-kva/" },
+  { label: "30 KVA", link: "https://pinnaclegenerators.com/product/30-kva/" },
+  { label: "35 KVA", link: "https://pinnaclegenerators.com/product/35-kva/" },
+  { label: "40 KVA", link: "https://pinnaclegenerators.com/product/40-kva/" },
+  { label: "45 KVA", link: "https://pinnaclegenerators.com/product/45-kva/" },
+  { label: "50 KVA", link: "https://pinnaclegenerators.com/product/50-kva/" },
+  { label: "60 KVA", link: "https://pinnaclegenerators.com/product/60-kva/" },
+  { label: "125 KVA", link: "https://pinnaclegenerators.com/product/125-kva/" },
+];
+
 const testimonials = [
   {
     quote: "Pinnacle's power solutions have been instrumental in keeping our network infrastructure resilient. Their commitment to reliability mirrors our own.",
@@ -340,6 +356,29 @@ function Home() {
           <div className="h-16 w-[1px] bg-gradient-to-b from-white to-transparent" />
           <span className="text-[9px] font-bold uppercase tracking-[0.4em] text-white">Explore</span>
         </div>
+      </section>
+
+      {/* KVA Marquee Section */}
+      <section className="relative z-30 border-y border-white/10 bg-background/80 backdrop-blur-3xl overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-brand/5 via-transparent to-brand/5 opacity-20" />
+        <Marquee speed="slow">
+          {kvaRatings.map((item) => (
+            <a 
+              key={item.label} 
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-6 group py-12 px-8 transition-all duration-500"
+            >
+              <span className="text-7xl font-display font-black text-white/60 transition-all duration-500 group-hover:text-white group-hover:scale-110 group-hover:drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                {item.label}
+              </span>
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 opacity-0 transition-all duration-500 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0 group-hover:bg-brand group-hover:border-brand shadow-glow">
+                <ArrowUpRight className="h-6 w-6 text-white" />
+              </div>
+            </a>
+          ))}
+        </Marquee>
       </section>
 
 
